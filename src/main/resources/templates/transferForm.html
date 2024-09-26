@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transfer</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #ddd; /* Light gray for the box */
+        padding: 40px; /* Padding for content within the box */
+        width: 40%; /* Adjust width as needed */
+        border-radius: 15px;
+        display: flex;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .sidebar {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20px; /* Add space between nav and dashboard */
+    }
+
+    .nav button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    .withdraw {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .withdraw:hover {
+        background-color: #025fc4;
+    }
+
+    .deposit {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .deposit:hover {
+        background-color: #025fc4;
+    }
+
+    .transfer {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .transfer:hover {
+        background-color: #025fc4;
+    }
+
+    .dashboard {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .account-info {
+        margin-bottom: 20px;
+    }
+
+    .account-info p {
+        margin: 10px;
+    }
+    .transaction-history {
+        margin-bottom: 20px;
+    }
+
+    .transaction-history table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .transaction-history th,
+    .transaction-history td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+
+    .transaction-history th {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .transaction-history tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .transaction-history tr:hover {
+        background-color: #ddd;
+    }
+
+    .logout {
+        background-color: #6c757d;
+        color: white;
+        margin-left: auto; /* Align button before the far right */
+        margin-right: 20px; /* Add space between logout button and far right */
+    }
+
+    .logout:hover {
+        background-color: #5a6268;
+    }
+
+    /* Header styling */
+    .header {
+        display: flex; /* Allow logo and text to be side-by-side */
+        align-items: center; /* Align vertically */
+        background-color: #0153a9; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Add some padding */
+        border-radius: 0px; /* Rounded corners */
+        width: 100%; /* Extend the header color to the far right */
+
+    }
+
+    .logo-container {
+        margin-right: 10px; /* Add space between logo and text */
+    }
+
+    .logo-container img {
+        width: 40px; /* Adjust the logo size */
+    }
+
+    .spark-bank {
+        font-weight: bold; /* Make the text bold */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        text-align: left;
+        padding: 10px;
+        width: 75%;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    button[type="submit"] {
+<!--            background-color: #007bff;-->
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+<div class="header">
+    <div class="logo-container">
+        <img src="/Images/bank.png" alt="Spark Bank logo">
+    </div>
+    <div class="spark-bank">Spark Bank</div>
+    <div style="margin-left: auto; margin-right: 30px;">
+        <a th:href="@{/logout}">
+            <button type="button" class="transfer">Logout</button>
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="sidebar">
+        <div class="nav">
+            <a th:href="@{/accounts/withdraw}">
+                <button type="button" class="transfer">Withdraw</button>
+            </a>
+            <a th:href="@{/accounts/deposit}">
+                <button type="button" class="deposit">Deposit</button>
+            </a>
+            <a th:href="@{/accounts/transfer}">
+                <button type="button" class="transfer">Transfer</button>
+            </a></div>
+    </div>
+
+    <div class="dashboard">
+        <form th:action="@{/accounts/transfer/submit/{userId}(userId=${userId})}" th:object="${transferDTO}"
+              method="post">
+
+            <label for="receiverAccountNumber">Receiver Account Number:</label>
+            <input type="number" id="receiverAccountNumber" name="receiverAccountNumber"
+                   th:value="*{receiverAccountNumber}" required>
+
+            <br>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" th:value="*{amount}" min="1" required>
+            <br>
+            <button type="submit">Transfer</button>
+        </form>
+
+        <div th:if="${message!=null}">
+            <p th:text="${message}" style="text-align: center, color: red, font-weight: bold"></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

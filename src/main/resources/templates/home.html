@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header>
+    <title>Spark Bank</title>
+</header>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: white; /* White background for the box */
+        border: 1px solid #ddd; /* Light gray border */
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px; /* Rounded corners for the box */
+        display: compact;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    button {
+        background-color: #007BFF;
+        margin: 10px; /* Spacing between buttons */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 200px; /* Adjust width as needed */
+        margin-bottom: 10px; /* Space between logo and text */
+    }
+</style>
+
+<body>
+<div class="container">
+    <img src="/Images/bank.png" alt="Spark Bank logo" width="150" height="150"> <h2>Welcome to Spark Bank</h2>
+    <p>Please choose an option:</p>
+    <button><a href="/login">Login</a></button>
+    <button><a href="/register">Register</a></button>
+</div>
+</body>
+</html>

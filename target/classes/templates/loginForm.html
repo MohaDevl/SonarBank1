@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #ddd; /* Light gray for the box */
+        padding: 40px; /* Padding for content within the box */
+        width: 20%; /* Adjust width as needed */
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        text-align: left;
+        padding: 10px;
+        width: 75%;
+        margin-bottom: 20px;
+        border-radius: 7px;
+    }
+
+    button[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form th:action="@{/login}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <button type="submit">Login</button>
+    </form>
+    <div>
+        <a th:href="@{/register}">
+            <button type="submit" style="margin-top: 10px;width: 100%;background-color: brown;">Register</button>
+        </a>
+    </div>
+
+    <div>
+        <a th:href="@{/}">
+            <button type="submit" style="margin-top: 10px;width: 100%;background-color: cadetblue;">Home</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
