@@ -52,6 +52,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+         <dependency>
+           <groupId>io.gatling</groupId>
+           <artifactId>gatling-maven-plugin</artifactId>
+           <version>3.7.6</version>
+          </dependency>
     </dependencies>
 
     <build>
