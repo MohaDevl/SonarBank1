@@ -21,22 +21,27 @@ jobs:
       with:
         java-version: '17'
 
-    - name: Build with Maven
-      run: mvn clean install
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
 
     - name: Run Unit Tests
-      run: mvn test
+      run: npm test
 
     - name: Run Performance Tests
-      run: mvn gatling:test
+      run: npm run test:performance
+      env:
+        CI: true
 
     - name: Run Security Checks
       uses: step-security/harden-runner@v1
 
-    - name: Run Static Analysis
-      run: mvn sonar:sonar
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - name: Run Linting
+      run: npm run lint
 
   deploy:
     runs-on: ubuntu-latest
