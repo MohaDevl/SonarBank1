@@ -23,7 +23,7 @@ jobs:
 
     - name: Run JMeter Tests
       run: |
-        jmeter -n -t jmeter/your_test_plan.jmx -l jmeter/results.jtl
+        jmeter -n -t BankTestPlan.jmx -l results.jtl
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
