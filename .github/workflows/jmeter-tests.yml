@@ -1,4 +1,4 @@
-name: JMeter Test Automation
+name: JMeter Test
 
 on:
   push:
@@ -9,28 +9,24 @@ on:
       - main
 
 jobs:
-  jmeter-tests:
+  jmeter-test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Install JMeter
       run: |
         sudo apt-get update
-        sudo apt-get install -y openjdk-11-jre
-        wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz
-        tar -xvzf apache-jmeter-5.5.tgz
-        export JMETER_HOME=$PWD/apache-jmeter-5.5
-        export PATH=$JMETER_HOME/bin:$PATH
+        sudo apt-get install -y jmeter
 
     - name: Run JMeter Tests
       run: |
-        jmeter -n -t testplan.jmx -l results.jtl -e -o ./report
+        jmeter -n -t jmeter/your_test_plan.jmx -l jmeter/results.jtl
 
-    - name: Upload Test Report
+    - name: Upload Test Results
       uses: actions/upload-artifact@v2
       with:
-        name: jmeter-report
-        path: ./report
+        name: jmeter-results
+        path: jmeter/results.jtl
