@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+
+
+<httpSample t="368" it="0" lt="367" ct="251" ts="1727405342642" s="true" lb="logout-1" rc="200" rm="OK" tn="" dt="text" de="utf-8" by="2649" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-MPVT06P">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Fri, 27 Sep 2024 02:49:40 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: require-trusted-types-for &apos;script&apos;;report-uri /_/IdentityRotateCookiesHttp/cspreport
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*
+Cross-Origin-Resource-Policy: same-site
+Cross-Origin-Opener-Policy: same-origin
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+Cross-Origin-Embedder-Policy: require-corp
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: __Secure-1PSIDTS=sidts-CjEBQlrA-HvpoofBqDT9ubWHxhKY7igicsP_u8FSryT3JKOxEEK_cpUuQN_6YCzaC440EAA; Domain=.google.com; Expires=Sat, 27-Sep-2025 02:49:40 GMT; Path=/; Secure; HttpOnly; Priority=HIGH; SameParty
+Set-Cookie: __Secure-3PSIDTS=sidts-CjEBQlrA-HvpoofBqDT9ubWHxhKY7igicsP_u8FSryT3JKOxEEK_cpUuQN_6YCzaC440EAA; Domain=.google.com; Expires=Sat, 27-Sep-2025 02:49:40 GMT; Path=/; Secure; HttpOnly; Priority=HIGH; SameSite=none
+Set-Cookie: SIDCC=AKEyXzW0nReRUi2VSa25IEH8J7QwP4xYb-J3ErhPVRk1TePcxbcGopUJO0mi1Ql01uHs_lA3Rw; expires=Sat, 27-Sep-2025 02:49:40 GMT; path=/; domain=.google.com; priority=high
+Set-Cookie: __Secure-1PSIDCC=AKEyXzXd7a9JFs5EoqdBbF2j3_n_d3YhR8oNo2SDwo2Os0ALKrApD9zVMVJ_RJNB8wRvncHOamo; expires=Sat, 27-Sep-2025 02:49:40 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high
+Set-Cookie: __Secure-3PSIDCC=AKEyXzXqPvOazwqZl8kzDlxootUzptJNAVztNBnJr6RPxHb-iaVe25gnFzHXPIvhYFywm434Aw; expires=Sat, 27-Sep-2025 02:49:40 GMT; path=/; domain=.google.com; Secure; HttpOnly; priority=high; SameSite=none
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+Connection: close
+Transfer-Encoding: chunked
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Referer: https://accounts.google.com/RotateCookiesPage?og_pid=658&amp;rot=3&amp;origin=https%3A%2F%2Fgemini.google.com&amp;exp_id=0
+Sec-Fetch-Site: same-origin
+Origin: https://accounts.google.com
+sec-ch-ua-mobile: ?0
+sec-ch-ua-full-version-list: &quot;Chromium&quot;;v=&quot;128.0.6613.114&quot;, &quot;Not;A=Brand&quot;;v=&quot;24.0.0.0&quot;, &quot;Google Chrome&quot;;v=&quot;128.0.6613.114&quot;
+X-Client-Data: CKG1yQEIjbbJAQijtskBCKmdygEIseXKAQiSocsBCJ3+zAEIhaDNAQj7qc4BCNaszgEI67TOAQjFts4BCL25zgEIkMHOAQj+w84BCMrEzgEY9snNARicsc4BGLu2zgEYy7nOAQ==
+sec-ch-ua-form-factors: &quot;Desktop&quot;
+Host: accounts.google.com
+Content-Type: application/json
+sec-ch-ua-platform-version: &quot;10.0.0&quot;
+sec-ch-ua-full-version: &quot;128.0.6613.114&quot;
+Sec-Fetch-Mode: same-origin
+sec-ch-ua-arch: &quot;x86&quot;
+Accept-Language: en-GB,en;q=0.9,ar;q=0.8
+Accept: */*
+sec-ch-ua: &quot;Chromium&quot;;v=&quot;128&quot;, &quot;Not;A=Brand&quot;;v=&quot;24&quot;, &quot;Google Chrome&quot;;v=&quot;128&quot;
+X-Chrome-ID-Consistency-Request: version=1,client_id=77185425430.apps.googleusercontent.com,device_id=cab1a619-a3db-4cb8-85c5-fba715bf03dd,sync_account_id=114302301585385776687,signin_mode=all_accounts,signout_mode=show_confirmation
+sec-ch-ua-platform: &quot;Windows&quot;
+sec-ch-ua-bitness: &quot;64&quot;
+sec-ch-ua-model: &quot;&quot;
+sec-ch-ua-wow64: ?0
+Accept-Encoding: gzip, deflate, br, zstd
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 27
+</requestHeader>
+  <responseData class="java.lang.String">)]}&apos;
+
+[[&quot;identity.hfcr&quot;,600],[&quot;di&quot;,27]]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">OTZ=7711010_84_88_104280_84_446940; SMSV=ADHTe-C1pp9Z9Krrx7izlWWt1izovmHrke1r1-6LEMjv5ragihpzgMwdgrmEjmp3BYOydqUb_e32a6rkm0ZQUiS4d5PwQIIkpFGIU4xdVbTiFAWrJuKbC8w; SID=g.a000oAjDjhSxRB1U370tLIoAcpmomBuZ9WtrlDQvi-JUILIZbrXYYWjNZYTLwggcV_SUIyC0ZQACgYKAboSARYSFQHGX2MijTxtGue008qUQLT_SP6W9xoVAUF8yKoDrEH600o7PWgoDUALm-ZA0076; __Secure-1PSID=g.a000oAjDjhSxRB1U370tLIoAcpmomBuZ9WtrlDQvi-JUILIZbrXYspTCoaN3i50NsCqTskhjugACgYKAfISARYSFQHGX2MiFjbwAWzOy7RZ5925gWB8KBoVAUF8yKo9QmJHGoHknVxN-Vda-ULy0076; __Secure-3PSID=g.a000oAjDjhSxRB1U370tLIoAcpmomBuZ9WtrlDQvi-JUILIZbrXYWxRKwlRR9M9TZFiHpbiP5wACgYKAUMSARYSFQHGX2MiGim6KsYgGXplKmWKDKSlpBoVAUF8yKqQQwOiY-E0KJcFERYi-GAN0076; HSID=AD2q10b6gQ40yiPit; SSID=Aw8iXEC2hT_gwIByA; APISID=XToMkJzNEC-RCUk_/AayD3GhExOp7kxbDE; SAPISID=tstayig037AtJpFZ/A37vzjcPVBCJA9KuR; __Secure-1PAPISID=tstayig037AtJpFZ/A37vzjcPVBCJA9KuR; __Secure-3PAPISID=tstayig037AtJpFZ/A37vzjcPVBCJA9KuR; ACCOUNT_CHOOSER=AFx_qI4nCfTGFeOFS7Ngk5A-FP64IiGSfScnSj8HWyYaXedPmIDZ-uugAY-6_omh8kkO0Ph3ixxCYOBG_z2XSg5fQ93FyGq3ISlxwcct4Ck0EcZvR4Kz2K6PRMWwi9Q95rSR4BHk5o4-mrSl8KeyZOYdygXzcFQC23Ds6aJi6J_k-fgcIIk7aLIaO6Ty5VrlU7V-Mw_eddjLGNDs697ckbDAFz1oOqMWB9Jten3vlPmDl7EZGYXO4p-ESodjhKZJkLTGpbQhtnet11U_DpwaGehQQqtqGQ9LS-BRlJv4ZLbSMwWUQgJG1i0; __Secure-ENID=22.SE=TpfOMzjCb9AlNtnRpd9M6XpbRDUw3a8BQVkt4lUHClWuiJwFSR8pU-EVUVoo4JMd-gvcqGqjQRGVR04BqawOWV7ZOaBUen4LbhD7jpIx0Ua34I7ejvT-SY1xxzWojMbmdNLxDTgUyIARmm5v7tLTXgjtMqJ6Tfvo2VjBbcaeQeRiPwKymqTxoBIpQAzoRY8E8P0GWFaXfNK_LKTLMfS3WMgyqfsM9JGKZsFO4wGQ8Dgs5R7B58s7C6tBRXyD59wGoKTcPLtWd_WaynFckKgJaG_12JWBzD4dV-ZlKTUy3I2qrn6VORZ5t96dWS_6RMEpbf4tsfe1_TwN58c0KjhJA-NYXaGYA33afNwbr8jOlHRDxKXJPKAlGflr; LSOLH=|_SVI_EJj3vJDs1IgDGAwiP01BRURIZl9xSEROcUVpU1h6MFAtRndXaXExeGhHNk5oWjlkbXM0TUVXdTV0LXM2bVd6Y2VneGJsd3VxcXQxaw_:|28782506:f5f5; SEARCH_SAMESITE=CgQIlZwB; __Host-GAPS=1:oGIafUaE6eVuTUKIJMmHiIEREQfooWoGxvex8iuYzuAHZYWpdpGVljg3ulgouh5oUaeu97GRXZWTErBbymAW8F9HKVuYbA:3EUbvlIzTMScjk92; LSID=o.chromewebstore.google.com|o.drive.google.com|o.gds.google.com|o.lens.google.com|o.mail.google.com|o.meet.google.com|o.remotedesktop.google.com|s.SA|s.youtube:g.a000oAjDjt_8P0LrDtbidzgInxaszCCVzt53oJmqhsjOZB6sZBXF_A2F0CVNiV-1OqV7YeIaUQACgYKAYYSARYSFQHGX2Mi8UQJ_cm68IJyIPQjvmSuORoVAUF8yKoNGcdRsfJr0GQLDqTkrJCJ0076; __Host-1PLSID=o.chromewebstore.google.com|o.drive.google.com|o.gds.google.com|o.lens.google.com|o.mail.google.com|o.meet.google.com|o.remotedesktop.google.com|s.SA|s.youtube:g.a000oAjDjt_8P0LrDtbidzgInxaszCCVzt53oJmqhsjOZB6sZBXFaxG1v8gxpcglGEKy-GQOjwACgYKAWASARYSFQHGX2MiEIHaWvg7twc5q52Es301ChoVAUF8yKp-lrpEin877sMc2nAe-POq0076; __Host-3PLSID=o.chromewebstore.google.com|o.drive.google.com|o.gds.google.com|o.lens.google.com|o.mail.google.com|o.meet.google.com|o.remotedesktop.google.com|s.SA|s.youtube:g.a000oAjDjt_8P0LrDtbidzgInxaszCCVzt53oJmqhsjOZB6sZBXFfXy-ScY7ZEzh9g1VYVtzbQACgYKASgSARYSFQHGX2MiasVJfw5S628gaDzDbeJlxhoVAUF8yKp-gGVGUhi3nbhsVHLXpRgp0076; AEC=AVYB7cqeIjzwy58jtTDXmf-gBQwxpyRGLPqr7xxUCvnL_MjhTJc3b8-krw; NID=517=ynlXsQBEt-62wiYOY9TkSTYOO3VbmalZWKEGkNK9yuoivXxNdXWFpITZiKkIazqay-kcknnJX9uZ1SlPGuvKCRTRT1qjBVv7XjxfsZFhkhIg4rLB7l2j9jhmgks_mbin6xY2IZQyTAwGKGCbXvwRYjsrjNu4jNM9jhIWOHQ7QDf5heiVDOVudkaA-ljoBnWFjh7fh_gTGeiXzbPT1rTigHhP-RIeIpIoVs-MFihc71wxfAWIsnwrBTOcHoh4SohwoGQrxVKD4o2KyBCpul7rQ15HsHTP_d5_9CuvDK3XR7_rYLCFbg-deB2O-yTh3SagYkkL6_XkK5s6SF14X73spX65duLkdaqvxqR7XQPtDxumHtc-h8dKtfLHM8P9A15AEn8hnIKgcQod-dwChaUvOJHNaTAzHt98cQinDQsn67MgZ3d9ptxNLbL66Szgrfs91kkVmBGNxOYgc1ip99SjitYiQwwL8_2Ujl204UlB81apXgawhqQABKdDPQUEc3SmOgnooALqVtszvKWcz5JlzYARNE5-v1oO1mNLwAvwkSXu9zrozebcc5JzzOraGBQnJESVYwEJ_fkmy3anw5O5AfUtx_VSXgGdTTBaszg5h4OEE6n8ZHqjuh0znNO9rtfTEO9nZTNbNjQwl72A1ZeLkcWjEvbG6H3M5jiuJIVbPZ0t1XWwnboSjnHuFDRQ_Znrp_swH4tko3v4-mS-dR698Bl2IvR8bcrxZ_CbO8l9qD06ZPxqWdTaFwTkgpSn7go4NvMWdZDQdu10HS0tg-DV1Fh0AVQCzW9DoESGVXc1sC_g5NLWJkR2A-yVDT1oUgrNVwfI34uwKc9X4hiysiaMlieUuL50N3EMRRnayD80TM00GCB0jdpySAK4PZq5zyXYIEu0w1dfPxUVtHBwqlVvP6R8qKugvrM8iOWzxOw7knMWXEpbg9TAEYcEMJzXpvdtEcVe2X1rbRTSMEQOKQYJ1x99_Gbnd4aAQLSU3gk29QlK9x1xiujUbxMLMt6NfVLfaqtr3m9Pd5A3gJKeEoVBJUJi-7HhN1sKcFi8pAPTjnXb9QBD6H1ty0WCTscsiQKwnGa7Fe7Fg9vzYJpPz9qkftdGSRlpRts_VtsHIlfyvwMdWne6SK03jtwYjk6iBcl5Fcvio0QgChV-7qtXtLYzJS9Uw4UpSIjG_N-FSjE0-cE3-zNwMgtizxwAJfDatUe-trY12fF0B59OkNLPAX4ZHOP9xmYGKd9c5fPdgbqnt62AcfASaBKCRpbcMqVH19xJvUi_0IeBI9GIFUVTozlbduBDBTquERj2gEynPow07sIM46RoZi43R28c7lUcd76jJIe8qokxzcBaqF6tVG4QlNgPcukeok0LA3_mAt4gB5C8M-IlVuLsNUn5ot_cCzZBZrutcgsbA3yywO2TbBx4-I-YN1_lyZp2Az5_Y41h2utYXefSPrXhOWDcn0Qc-MU; __Secure-1PSIDTS=sidts-CjEBQlrA-MiLXcCLrlFBqWRSAgiWpHOVhPHx4kRAg_anUU398yJnsvb1lnCslcs-FEZrEAA; __Secure-3PSIDTS=sidts-CjEBQlrA-MiLXcCLrlFBqWRSAgiWpHOVhPHx4kRAg_anUU398yJnsvb1lnCslcs-FEZrEAA; SIDCC=AKEyXzVpgYeatPjsFQBSDPsqvUP_WI0ClVX-zyKxYoLzOhav3s9sKKR8ox5QFuQi0CTUg7EI9w; __Secure-1PSIDCC=AKEyXzXQIvFrwmiJFgP3SfkD3Hv2UM6OFD8F_EUAkKa5nO_t8V8AtjFIgYrKLlTQi9aw5aVKoTQ; __Secure-3PSIDCC=AKEyXzUV4WvCXIGDrSpf41H5CMPV5djhEJuQxkmA7YhAnVHYL93_Vm4fKFjN6b1o1jiAVz7eBg</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">[658,&quot;3635266725081868987&quot;]</queryString>
+  <java.net.URL>https://accounts.google.com/RotateCookies</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="https://rr4---sn-nuj-wxq6.googlevideo.com:443/videoplayback?expire=1727426900&amp;ei=9Bz2Zp3ZLtq8mLAPzLOE8Ao&amp;ip=176.44.67.19&amp;id=o-AHaFB7yHfdGu9muqCPRmmzBMyR9Pzs3Z0al-zZCBGsBS&amp;source=youtube&amp;requiressl=yes&amp;xpc=EgVo2aDSNQ%3D%3D&amp;mh=nB&amp;mm=31%2C29&amp;mn=sn-nuj-wxq6%2Csn-hgn7yn7z&amp;ms=au%2Crdu&amp;mv=m&amp;mvi=4&amp;pl=20&amp;initcwndbps=1805000&amp;siu=1&amp;spc=54MbxSUSZPBvOVxSt36gTz07-b6P_FDkbeH_otKYsvxcKL1c0OOujdtiNH1giTAEKSgBGGUOfg&amp;svpuc=1&amp;ns=HpRmoqwxVjmCfQllnwguxaUQ&amp;sabr=1&amp;rqh=1&amp;mt=1727404862&amp;fvip=1&amp;keepalive=yes&amp;fexp=51299152&amp;c=WEB&amp;n=aFS6NtbNWM5-Mg&amp;sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&amp;sig=AJfQdSswRAIge6XH1qIUHi0n2wc7L6XsQ7M-CwVzInClQa1SJyue-6sCIESlh7ZHHvn4ERRc-xfiu3PFvBZEpSTjvhoTo0dPQr1r&amp;lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&amp;lsig=ABPmVW0wRQIgD12PWS6esIHhkWXFZRCAvoLM_D69dfnQxfeCGuo2-28CIQDLc74TueAK84L_fzMcodCX6ZmXWOMV4Lt3l2749jTEPA%3D%3D&amp;cpn=7V-T18YDosZRerog&amp;cver=2.20240925.09.00&amp;rn=167" rc="" rm="URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: &quot;&#x0;&#x0;&quot;" tn="" dt="" de="" by="1050" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-MPVT06P">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">POST /videoplayback?expire=1727426900&amp;ei=9Bz2Zp3ZLtq8mLAPzLOE8Ao&amp;ip=176.44.67.19&amp;id=o-AHaFB7yHfdGu9muqCPRmmzBMyR9Pzs3Z0al-zZCBGsBS&amp;source=youtube&amp;requiressl=yes&amp;xpc=EgVo2aDSNQ%3D%3D&amp;mh=nB&amp;mm=31%2C29&amp;mn=sn-nuj-wxq6%2Csn-hgn7yn7z&amp;ms=au%2Crdu&amp;mv=m&amp;mvi=4&amp;pl=20&amp;initcwndbps=1805000&amp;siu=1&amp;spc=54MbxSUSZPBvOVxSt36gTz07-b6P_FDkbeH_otKYsvxcKL1c0OOujdtiNH1giTAEKSgBGGUOfg&amp;svpuc=1&amp;ns=HpRmoqwxVjmCfQllnwguxaUQ&amp;sabr=1&amp;rqh=1&amp;mt=1727404862&amp;fvip=1&amp;keepalive=yes&amp;fexp=51299152&amp;c=WEB&amp;n=aFS6NtbNWM5-Mg&amp;sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&amp;sig=AJfQdSswRAIge6XH1qIUHi0n2wc7L6XsQ7M-CwVzInClQa1SJyue-6sCIESlh7ZHHvn4ERRc-xfiu3PFvBZEpSTjvhoTo0dPQr1r&amp;lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&amp;lsig=ABPmVW0wRQIgD12PWS6esIHhkWXFZRCAvoLM_D69dfnQxfeCGuo2-28CIQDLc74TueAK84L_fzMcodCX6ZmXWOMV4Lt3l2749jTEPA%3D%3D&amp;cpn=7V-T18YDosZRerog&amp;cver=2.20240925.09.00&amp;rn=167 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+</testResults>
