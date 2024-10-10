@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Install JMeter
       run: |
@@ -23,10 +23,14 @@ jobs:
 
     - name: Run JMeter Tests
       run: |
-        jmeter -n -t Jmeter/BankTestPlan.jmx 
+        jmeter -n -t jmeter/testplan.jmx -l jmeter/results.jtl
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
         name: jmeter-results
         path: jmeter/results.jtl
+
+    - name: Check JMeter Logs
+      run: |
+        cat jmeter/results.jtl
